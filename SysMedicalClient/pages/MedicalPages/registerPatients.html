@@ -1,0 +1,245 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AdminLTE | Dashboard</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+         bootstrap 3.0.2 
+        <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         font Awesome 
+        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+         Ionicons 
+        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+         Theme style 
+        <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+
+         HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries 
+         WARNING: Respond.js doesn't work if you view the page via file:// 
+        [if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]
+    </head>-->
+    <!--<body class="skin-blue">-->
+
+        <div >
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <!--<aside class="right-side">-->
+            <aside >
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Registro de Paciente
+                        <small>Preview</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li class="active">Registro de Paciente</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                     <form role="form"  id="formPaciente" >
+                        <!-- left column -->
+                        <div class="col-md-6">
+                            <!-- general form elements -->
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <h3 class="box-title">Informacion del Paciente</h3>
+                                </div><!-- /.box-header -->
+                                <!-- form start -->
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <label for="iAddress">ID Doctor</label>
+                                            <input type="text" class="form-control" name="userId" id="userId" readonly="true">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="iName">Nombres</label>
+                                            <input type="text" class="form-control" name="firtName" id="firtName" placeholder="Introduzca Nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iLastName">Apellido</label>
+                                            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Introduzca Apellido">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iYearsOld">Edad</label>
+                                            <input type="text" class="form-control" name="birthDate" id="birthDate" placeholder="Introduzca Edad">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ifn">F.N.</label>
+                                            <input type="text" class="form-control" name="fn" id="fn" placeholder="Fecha Aproximada de Nacimiento">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iDate">Fecha</label>
+                                            <input type="text" class="form-control" name="registerDate" id="registerDate" placeholder="Fecha de Registro">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iEC">Estado Civil</label>
+                                            <select class="form-control" name="civilStatus" id="civilStatus">
+                                                <option value="soltero">Soltero/a</option>
+                                                <option value="casado">Casado/a</option>
+                                                <option value="divorsiada">Divorsiado/a</option>
+                                                <option value="viudo">Viudo/a</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iRace">Raza</label>
+                                            <select class="form-control" name="race" id="race">
+                                                <option value="blanca" >Blanca</option>
+                                                <option value="negra">Negra</option>
+                                                <option value="amarilla" >Amarrilla</option>
+                                                <option value="asiatica">Asiatica</option>
+                                                <option value="mestizo">Mestizo</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iDocId">Cedula</label> 
+                                            <input type="text" class="form-control" name="documentID" id="documentID" placeholder="Introduzca  Cedula"  data-inputmask='"mask": "999-9999999-9"' data-mask >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iTel">Telefono</label>
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                                <input type="text" class="form-control" name="tel1" id="tel1" placeholder="introduzca Telefono" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="iCel">Celular</label>
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                                <input type="text" class="form-control" name="cel" id="cel" placeholder="Introduzca Celular" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                                            </div>
+                                        </div>
+                                     
+                                    </div><!-- /.box-body -->
+
+                          
+                                <!--</form>-->
+                            </div><!-- /.box -->
+
+                        </div><!--/.col (left) -->
+                        
+                        <!-- right column -->
+                        <div class="col-md-6">
+                            <!-- general form elements disabled -->
+                            <div class="box box-warning">
+                                <div class="box-header">
+                                    <h3 class="box-title">Otras Informaciones</h3>
+                                </div><!-- /.box-header -->
+                                <div class="form-group">
+                                            <label for="iAddress">Direccion:</label>
+                                            <input type="text" class="form-control" name="addres" id="addres" placeholder="Introduzca Dirreccion">
+                                </div>
+                                <div class="box-body">
+                                    
+                                        <!-- text input -->
+                                        <div class="form-group">
+                                            <label>Enviado Por</label>
+                                            <input type="text" name="submittedBy" id="submittedBy" class="form-control" placeholder="Enter ..."/>
+                                        </div>
+
+                                        <!-- textarea -->
+                                        <div class="form-group">
+                                            <label>Motivo de Consulta</label>
+                                            <textarea class="form-control" rows="3" name="reason" id="reason" placeholder="Enter ..."></textarea>
+                                        </div>
+                                    
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                                    <div class="box-footer">
+                                        <button type="button" class="btn btn-primary" onClick="save()">Guardar</button>
+                                        <button type="submit" class="btn btn-primary">Cancelar</button>
+                                    </div>
+                        </div><!--/.col (right) -->
+                      </form>
+                    </div>   <!-- /.row -->
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+        
+        
+<!--         jQuery 2.0.2 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+         Bootstrap 
+        <script src="../../js/bootstrap.min.js" type="text/javascript"></script>-->
+<!--         InputMask 
+        <script src="../../js/plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
+        <script src="../../js/plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+        <script src="../../js/plugins/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>-->
+<!--         AdminLTE App 
+        <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
+         AdminLTE for demo purposes 
+        <script src="../../js/AdminLTE/demo.js" type="text/javascript"></script>    
+        <script src="../../js/engine.js" type="text/javascript"></script>    -->
+                <!-- Page script -->
+        <script type="text/javascript">
+            $(function() {
+                $("#userId").val(sessionStorage.userId)
+                //Datemask dd/mm/yyyy
+                $("#fn").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+                //Datemask2 mm/dd/yyyy
+                $("#registerDate").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+                
+                $("[data-mask]").inputmask();
+                
+                $('#registerDate').pickadate({
+                    format: 'dd  mmm, yyyy',
+                    formatSubmit: 'yyyy,mm,dd',
+  
+                    editable: true,
+                    selectYears: true,
+                    selectMonths: true
+                });
+                $('#registerDate').val( new Date());
+                $('#registerDate_submit').val( new Date());
+                
+                $('#fn').pickadate({
+                    format: 'dd  mmm, yyyy',
+                    formatSubmit: 'yyyy,mm,dd',
+  
+                    editable: true,
+                    selectYears: true,
+                    selectMonths: true
+                });
+            });
+            
+            function cancel(){
+                cargarContenido('MedicalPages/patient');
+            }
+            
+            function save(){
+                //                TODO: mejorar esto
+                dateSelected=$("#registerDate_submit").val();
+                fnSelected=$("#fn_submit").val();
+                
+                var jsonObject=JSON.stringify($( "form" ).serializeObject());
+                console.log(jsonObject);
+                $.ajax({
+                    type: "POST",
+                    url: parentURLWS+"/SysMedicalServer/api/patients/create",
+                    // The key needs to match your method's input parameter (case-sensitive).
+                    data: jsonObject,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function(){
+                        console.log("Cool");
+                        alert("La paciente  fue registrado con exito");
+                        cargarContenido('MedicalPages/patient');
+                    },
+                    failure: function(errMsg) {
+                        alert(errMsg);
+                    }
+                });                
+
+            }
+        </script>
+<!--    </body>
+</html>-->

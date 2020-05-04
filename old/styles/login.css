@@ -1,0 +1,103 @@
+/* noticias */
+
+.contactForm {
+  margin-top:10%;
+  margin-left:10%;
+}
+
+fieldset {
+  background:#BCDBB5;
+  border:1px solid #C4D3EA;
+  clear:both;
+  margin:0 15% 0% 15%;
+  padding:1em 1.4em 1.4em;
+  border-radius:10px; 
+}
+
+fieldset legend {
+  background:#D2FFD2;
+  border:1px solid #C4D3EA;
+  color:#336699;
+  font-size:1.2em;
+  font-weight:bold;
+  margin:0 -0.4em;
+  padding:5px 10px;
+  text-transform:capitalize;
+
+  border-radius:10px;  
+ }
+
+/*login*/
+
+.loginForm div.field {
+  margin-bottom:10px;
+  border.radius: 10px;  
+ -moz-border-radius:10px;  
+ -webkit-border-radius:10px;  
+}
+
+.loginForm label {
+  color:#555555;
+  float:left;
+  font-size:14px;
+  font-weight:bold;
+  margin-top:9px;
+  text-align:right;
+  text-transform:capitalize;
+  width:90px;
+  
+
+}
+
+.loginForm input[type=text]:focus {
+  background:#FFFFFF;
+  border:2px solid #EF9E4D;
+  
+  
+}
+
+.loginForm input[type="submit"] {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  background:#395C8A;
+  border:3px solid #83A4CA;
+  color:#FFFFFF;
+  display:block;
+  font-size:120%;
+  font-weight:bold;
+  letter-spacing:0;
+  margin:0;
+  min-width:120px;
+  width:auto !important;
+  
+}
+
+.loginForm input,
+.loginForm textarea,
+.loginForm select {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background-color:#FFFFFF;
+  border:2px solid #CCCCCC;
+  color:#666666;
+  font-family:"Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+  font-size:1.1em;
+  margin-left:20px;
+  padding:5px;
+  width:70%;
+}
+
+.loginForm div.submit {
+  float:center;
+}
+
+.error,
+.cool{
+	color:#FF3C3C;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:16px;
+}
+.cool{
+	color:#096;
+;
+}

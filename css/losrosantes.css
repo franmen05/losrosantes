@@ -1,0 +1,119 @@
+/*Ventana flotante*/
+#windows{
+    position: fixed;
+    width: 80%;
+    height: 76%;
+    background-color: #f0f0f0;
+    color: #ffff00;
+    border-radius: 5px;
+    /*left: calc( 80% - 10px - 0.5em);*/
+    top: -100%;
+    left: 10%;
+    padding: 1em;
+    box-shadow: 0px 0px 100px rgba(0,0,0,5);
+    text-align:justify;
+    transition: all 1.3s;
+    z-index: 1000;
+
+
+}
+
+.middle_top{
+    top: 10% !important;
+
+}
+
+.close{
+    position: absolute;
+    cursor: pointer;
+    top: -20px;
+    right: -10px;
+    background-color:  #eee;
+    color:#105cb6;
+    padding: 10px;
+    width: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,1,6);
+    z-index: 1001;
+    text-align: center;
+
+
+}
+
+#black_screen{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,1,0.8);
+    display: none;
+    z-index: 999;
+
+}
+
+ #containerBox {
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    color: indianred;
+
+}
+
+.maps{
+    width: 99%;
+    height: 480px;
+
+}
+
+/*niveles  css*/
+#main img{
+    border:2px solid #F7E96E;
+}
+#main a img{
+    border:none;
+}
+#main p{
+    padding-right:10px;
+}
+
+#noticias {
+    width:650px;
+    margin:0 0 0 5px;
+    float:left;
+}
+
+#noticias_post {
+    margin:20px 0 0 10px;
+}
+#noticias_post dt{
+    font-size:18px;
+    color:#31A5CE;
+    margin:0 0 5px 0;
+    text-align:center;
+}
+#noticias_post dd{
+    background:url(../images/layout/code.gif) repeat-x;
+    background-position:0 100%;
+    float:left;
+    padding:0 0 5px 0;
+    margin:0 0 10px 0;
+}
+#noticias_post dd img{
+    background:#FFFFFF;
+    border:1px solid #CCCCCC;
+    padding:2px 1px 1px 2px;
+    float:left;
+    margin:0 5px 5px 40px;
+}
+#noticias_post dd p{
+    font-size:14px;
+    color:#000;
+    text-align:left;
+}
+#noticias ul{
+    font-size:14px;
+    color:#2A2A2A;
+    text-align:left;
+}

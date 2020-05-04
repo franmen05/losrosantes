@@ -1,0 +1,164 @@
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-aqua">
+                                <div class="inner">
+                                    <h3>
+                                        New
+                                    </h3>
+                                    <p>
+                                       Agregar Nueva Entrada
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <a href="javascript:void(0);" onclick="cargarContenido('MedicalPages/registerRecordItem')" class="small-box-footer">
+                                    More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-green">
+                                <div class="inner">
+                                    <h3>
+                                        .
+                                    </h3>
+                                    <p>
+                                        Próximamente
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-stats-bars"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                    More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-yellow">
+                                <div class="inner">
+                                    <h3>
+                                        .
+                                    </h3>
+                                    <p>
+                                        Próximamente
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                    More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-red">
+                                <div class="inner">
+                                    <h3>
+                                        .
+                                    </h3>
+                                    <p>
+                                        Próximamente
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-pie-graph"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                    More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                    </div><!-- /.row -->
+                    
+<!-- row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- The time line -->
+                            <ul class="timeline" id="timeLineC">
+                                
+                                        
+                                <h2>Cargando Datos...</h2>
+                            
+                            </ul>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+        <!-- page script -->
+        <script src="../js/jquery-dateFormat.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+//                var ds=[];
+                var url=parentURLWS+'/SysMedicalServer/api/record/get/'+idSelected;
+                $.getJSON(url, function(jd) {
+                    var content='';
+                    console.log(jd);
+                    var data=jd;
+                    
+                    $.each(data,function(i,v){
+                        
+                        content+='  <li class="time-label"><span class="bg-red">'+ $.format.date(v.registerDate,'dd  MMM, yyyy')+'</span></li> ';
+
+                        content+=' <li> <i class="fa fa-envelope bg-blue"></i>'+ 
+                                    '<div class="timeline-item">'+
+                                    '<span class="time"><i class="fa fa-clock-o"> testo</i> </span>'+
+                                    '<h3 class="timeline-header"><a >Historial</a> </h3>'+ 
+                                    '<div class="timeline-body">'+
+                                        v.description 
+                                    +'</div><div class="timeline-footer">'+
+                                        '<a class="btn btn-primary btn-xs" onClick="getItem('+v.recordId+',1 )">Ver</a>  '+
+                                        '<a class="btn btn-warning btn-xs" onClick="getItem('+v.recordId+',2 )" >Editar</a>  '+
+                                        ' <a class="btn btn-danger btn-xs"onClick="deleteItem('+v.recordId+')">Borrar</a> '+
+                                    '</div></div></li>';
+                            
+                        if(v.prescriptionId!==undefined){
+                            content+=' <li><i class="fa fa-comments bg-yellow"></i>'+
+                                        '<div class="timeline-item">'+
+                                        '<span class="time"><i class="fa fa-clock-o"></i> </span>'+
+                                        '<h3 class="timeline-header"><a href="#">Recetas</a> </h3>'+
+                                        '<div class="timeline-body">'+
+                                            v.prescriptionId.descripcion
+                                        +'</div><div class="timeline-footer">'+ 
+                                         '<a class="btn btn-warning btn-flat btn-xs">ver</a> '+
+                                         '<a class="btn btn-warning btn-flat btn-xs">Anexos</a> '+
+                                         '<a class="btn btn-warning btn-flat btn-xs">Imprimir</a> '+
+                                        '</div></div></li> ';
+                        }
+                    });
+                    content+='<li><i class="fa fa-clock-o"></i></li>';
+                    $( "#timeLineC" ).html(content);
+
+                });
+            });
+            
+            function getItem(id,t){
+                console.info(t);
+                idItem=id;
+                if(t===1)
+                    cargarContenido('MedicalPages/showRecordItem');
+                else if(t===2)
+                    cargarContenido('MedicalPages/updateRecordItem');
+                
+            }
+            function deleteItem(id){
+                
+                $.ajax({
+                    type: "DELETE",
+                    url: parentURLWS+"/SysMedicalServer/api/record/remove/"+id,
+                    success: function(){
+                        console.log("Cool");
+                        alert("Registro eliminado con exito");
+                        cargarContenido('MedicalPages/recordDetails');
+                    },
+                    failure: function(errMsg) {
+                        alert(errMsg);
+                    }
+                });
+            }
+        </script>

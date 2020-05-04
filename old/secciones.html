@@ -1,0 +1,106 @@
+<!DOCThtml PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Centro Educativo Los Rosantes - secciones</title>
+
+<link rel="icon" href="styles/images/logoMini.jpg" type="image/x-icon" /> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+<script type="text/javascript" src="Js/lib/jquery.tools.main.js" ></script>
+<script type="text/javascript" src="Js/lib/secciones.js" ></script>
+
+
+<!--[if lt IE 7]>
+	<style> 
+	div.apple_overlay {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_IE6.gif);
+		color:#fff;
+	}
+	
+	/* default close button positioned on upper right corner */
+	div.apple_overlay div.close {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_close_IE6.gif);
+	
+	}	
+	</style>
+<![endif]-->
+<link type="text/css" href="styles/page.css" rel="stylesheet"/>
+<link type="text/css" href="styles/overlay-apple.css" rel="stylesheet"/>
+<link type="text/css" href="styles/secciones.css" rel="stylesheet"/>
+</head>
+<style type="text/css">
+<!--
+body{
+	padding-top:0px;
+	background-image:url(styles/images/fondo.png);
+}
+-->
+</style>
+
+<script>
+ 
+/*function mostrarContenido(contenido){
+	$("#Contenido").html(contenido);
+}*/
+
+</script>
+<body onLoad="cargarAlInicio()" >
+<div id="main" align="center">
+<div id="banner">
+<div id="fb" onClick="window.location='http://es-la.facebook.com/pages/Los-Rosantes-Centro-Educativo/130357480364771?sk=wall&filter=12'; " ></div>
+
+	<div id="barrerAniation" ></div>
+</div>
+<div id= "menu">
+    <table id="txtMenu">
+        <tr>
+        <td>
+  	      <div id="menuLeft"></div>
+        </td>
+        <td>
+        <div id="menuright">
+        <table id="txtTabla">
+            <tr>
+                <td>
+                    <div id="inicio"><a href="index.html" rel="">  Inicio  </a></div></td>
+                <td>
+                    <div id="historia"><a href="javascript:navegarA('#niveles')">  Niveles  </a></div>
+                </td>
+                <td>
+                    <div id="niveles"><a href="javascript:navegarA('#actividades')" >Actividades  </a> </div>
+                </td>
+                <td>
+                    <div id="actividades"><a href="javascript:navegarA('#proxe')">  Idiomas </a></div>
+                </td>
+                <td>
+                    <div id="contactos"><a href="javascript:navegarA('#contacto')">  Contactos </a> </div>
+                </td>
+                <td>
+                    <div id="aulavirtual"><a href="http://losrosantes.edu.do/Cursos/moodle/index.php">  Aula Virtual </a> </div>
+                </td>
+            </tr>      
+       	</table>   
+        </td>
+        </tr>  
+    </table>
+<!--</div><!--menurigth-->
+</div><!--menu-->
+<div id="Contenido">
+</div><!--contenido-->
+<div id="footer">
+    <center>
+       Av. España No. 10, Los Molinos,
+       Villa Duarte, Santo Domingo Este, Rep. Dominicana <br />
+       Tel.:809-595-9110
+       E-Mail: Colegio_Los_Rosantes@hotmail.com <br />
+       -Madcy Rijo -<br/>
+       2010-2011
+    </center>
+</div><!--footer-->
+
+<div class="apple_overlay" id="mainOverlay">
+	<div id="content"></div>
+</div><!--mainOverlay-->
+</body>
+</html>

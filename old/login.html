@@ -1,0 +1,25 @@
+<link href="styles/login.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.8.0.js" ></script>
+<script type="text/javascript" src="js/jquery.timers-1.2.js" ></script>
+<script type="text/javascript" src="js/login.js" ></script>
+ <input id="contrasena" name="contrasena" size="50" value="" type="password">
+<div class="loginForm">
+<fieldset> 
+  <legend>Login</legend>
+  <form  class="contact" method="post" action="javascript:login();"  >
+    <div class="field">
+      <label>usuario</label>
+      <input id="usuario" name="usuario" size="10" value="" type="text">
+    </div>
+    <div class="field">
+      <label for="">contraseña</label>
+      <input id="contrasena" name="contrasena" size="50" value="" type="password">
+    </div>
+    <div class="submit">
+     <center> <input id="inciarSeccion" name="inicirSeccion" value="Iniciar Seccion" type="submit" ></center>
+    </div>
+
+  </form>
+      <div id="message"></div>
+</fieldset>
+</div>

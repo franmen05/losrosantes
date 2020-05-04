@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Franmen.org</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="Js/lib/jquery.js" ></script>
+<script type="text/javascript" src="Js/lib/jquery.cross-slide.min.js" ></script>
+<style type="text/css">
+<!--
+
+#slideshow {
+  width: 600px;
+  height: 200px;
+}
+-->
+</style>
+<script>
+  $(function() {
+    $('#slideshow').crossSlide({
+      sleep: 2,
+      fade: 1
+    }, [
+      { src: 'styles/images/img_1.JPG',dir: 'up'  },
+      { src: 'styles/images/img_2.JPG' },
+      { src: 'styles/images/img_3.JPG' }
+    ])
+  });
+</script>
+</head>
+<body>
+<div id="slideshow"></div>
+<div class="main">
+</div>
+
+</body>
+</html>
+
+<!-- www.000webhost.com Analytics Code -->
+<script type="text/javascript" src="http://analytics.hosting24.com/count.php"></script>
+<noscript><a href="http://www.hosting24.com/"><img src="http://analytics.hosting24.com/count.php" alt="web hosting" /></a></noscript>
+<!-- End Of Analytics Code -->

@@ -1,0 +1,43 @@
+<link href="styles/noticias.css" media="screen" rel="stylesheet" type="text/css">
+<link href="styles/calendar.css"  rel="stylesheet" type="text/css">
+<script type="text/javascript" src="Js/lib/jquery.js" ></script>
+<script type="text/javascript" src="Js/lib/jquery.tools.min.js" ></script>
+<script type="text/javascript" src="Js/lib/noticias.js" ></script>
+
+<div class="noticiaForm">
+<fieldset> 
+  <legend>Publicar noticia</legend>
+  <form  class="noticias" method="post" action="javascript:publicarNoticia();"  >
+    <div class="field">
+      <label>Titulo</label>
+      <input id="titulo" name="titulo" size="50" value="" type="text">
+    </div>
+    <div class="field">
+      <label for="">fecha</label>
+      <input id="fecha" name="fecha" size="50" value="" type="date">
+    </div>
+    <div class="field">
+      <label>Tipo: </label>	 <select id="seleccionTipo" name="seleccionTipo"><option value="">Seleccione tipo...</option>
+			<option value="Activad">Activades</option>
+			<option value="Admision">Admisiones</option>
+			<option value="General">General</option>
+			<option value="Informacion">Informacion</option>
+			<option value="Idiomas">Idiomas</option>
+			<option value="Educacion Basica">Nivel Básica</option>
+			<option value="Educacion inicial">Nivel Inicial</option>
+			<option value="Educacion media/Bachillerato">Nivel Medio/Bachillerato</option>
+			<option value="Presentacion">Presentacion</option>
+		</select>	
+	</div>
+    <div class="field">
+      <label>Notica:</label>
+      <div class="fieldWithErrors"><textarea cols="40" id="cuerpo" name="cuerpo" rows="8"></textarea></div>
+    </div>
+
+    <div class="submit">
+      <input id="publicar" name="publicar" value="Publicar" type="submit" >
+    </div>
+    <div id="callback"></div>
+  </form>
+</fieldset>
+</div>

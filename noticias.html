@@ -1,0 +1,21 @@
+
+<link href="styles/noticias.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="Js/lib/jquery.js" ></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+
+<script id="tmpNoticia" type="text/x-jquery-tmpl"> 
+    <h2>${titulo}</h2>
+	<h3>
+		<p>${cuerpo}. 
+		<br> <span class="detalles">De:${tipo}</span> -
+			 <span class="detalles">${fecha}</span>
+		</p>
+	</h3>
+
+</script>
+<script type="text/javascript" src="Js/lib/noticias.js" ></script>
+<script> 
+getNoticias();
+</script>
+<div id="divNoticias"></div>
+

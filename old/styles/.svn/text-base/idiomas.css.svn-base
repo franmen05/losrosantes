@@ -1,0 +1,140 @@
+
+/*
+---------------- 
+   	 		ESTILOS DE TAG 
+			      ---------------------
+*/
+h1{
+	font-size:25px;
+	letter-spacing:1px;
+	color:#258D50;
+	font-weight:lighter;
+}
+
+p {
+	text-align:left;
+}
+
+/*
+---------------- 
+   	 		ESTILOS DE A 
+			      ---------------------
+*/
+a#sendtofriend{
+	color:#258D50;
+	display:block;
+	padding:15px 0 10px 5px;
+	font-size:22px;
+	font-weight:lighter;
+}
+/*
+---------------- 
+   	 		ENVOLTURA 
+ ---------------------
+*/
+#wrap {
+	width:100%;
+}
+/*
+---------------- 
+   	 		ESTILOS DE CLASSES 
+---------------------
+*/
+.baner_left {
+	display:block;
+	margin:0 0 0 2px;
+}
+.parrafo_left {
+	padding:0 0px 0 4px;
+	color:#554A49;
+	font-size:12px;
+	font-weight:bold;
+}
+
+/*
+---------------- 
+   	 		ESTILOS DE ID 
+---------------------
+*/
+
+#slide_left {
+	background:url(../images/layout/slide_bar_left.jpg) no-repeat;
+	float:left;
+	padding:20px 0 0 0;
+	width:200px;
+}
+#slide_left blockquote{
+	margin:0 0 20px 0;
+	padding:0 0 0 5px;
+}
+#main {
+	width:100%;
+}
+
+#main img{
+	border:2px solid #F7E96E;
+}
+#main a img{
+	border:none;
+}
+#main p{
+	padding-right:10px;
+}
+
+#intro {
+	margin:0 0 0 5px;
+	padding:0 0 0px 0;
+}
+#intro p{
+	margin:0 10px 15px 5px;
+	font-size:14px;
+	color:#000;
+	line-height:17px;
+	text-align:left;
+}
+
+#noticias {
+	width:100%;
+	margin:0 0 0 5px;
+	float:left;
+}
+#topnoticias {
+	background:url(../images/layout/noticias_top.jpg) no-repeat;
+	height:20px;
+
+}
+#noticias_post {
+
+}
+#noticias_post dt{
+	font-size:18px;
+	color:#31A5CE;
+	margin:0 0 5px 0;
+	text-align:left;
+}
+#noticias_post dd{
+	background:url(../images/layout/code.gif) repeat-x; 
+	background-position:0 100%;
+	float:left;
+	padding:0 0 5px 0;
+	margin:0 0 10px 0;
+}
+#noticias_post dd img{
+	background:#FFFFFF;
+	border:1px solid #CCCCCC;
+	padding:2px 1px 1px 2px;
+	float:left;
+	margin:0 5px 5px 0;
+}
+#noticias_post dd p{
+	font-size:14px;
+	color:#000;
+	line-height:18px;
+}
+#noticias_post dd p a{
+	font-size:12px;
+}
+/*---------------- 
+   	 		ESTILOS DE FORMS
+ ---------------------
+*/

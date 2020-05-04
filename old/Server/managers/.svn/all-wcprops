@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/WebLosRosantes/!svn/ver/13/colegio/Server/managers
+END
+SocialNetworkManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/WebLosRosantes/!svn/ver/13/colegio/Server/managers/SocialNetworkManager.php
+END
+SendEmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/WebLosRosantes/!svn/ver/14/colegio/Server/managers/SendEmail.php
+END
+LoginManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/WebLosRosantes/!svn/ver/15/colegio/Server/managers/LoginManager.php
+END
+NoticiasManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/WebLosRosantes/!svn/ver/14/colegio/Server/managers/NoticiasManager.php
+END

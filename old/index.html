@@ -1,0 +1,168 @@
+<!DOCThtml PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Centro Educativo Los Rosantes</title>
+<link rel="icon" href="styles/images/logoMini.jpg" type="image/x-icon" /> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" ></script>
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js" type="text/javascript" ></script>
+<script type="text/javascript" src="Js/lib/jquery.tools.main.js" ></script>
+<script type="text/javascript" src="Js/lib/jquery.cross-slide.min.js" ></script>
+<script type="text/javascript" src="Js/lib/secciones.js" ></script>
+<script type="text/javascript" src="Js/lib/noticias.js" ></script>
+<style type="text/css">
+<!--
+body{
+	padding-top:0px;
+	background-image:url(styles/images/fondo.png);
+}
+-->
+</style>
+
+<!--[if lt IE 7]>
+	<style> 
+	div.apple_overlay {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_IE6.gif);
+		color:#fff;
+	}
+	
+	/* default close button positioned on upper right corner */
+	div.apple_overlay div.close {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_close_IE6.gif);
+	
+	}	
+	</style>
+<![endif]-->
+<link type="text/css" href="styles/page.css" rel="stylesheet"/>
+<link type="text/css" href="styles/overlay-apple.css" rel="stylesheet"/>
+</head>
+<body>
+<script type="text/javascript" >
+
+//galeria  de  bienvenida
+  $(function() {
+    $('#galeriaBienvenida').crossSlide({
+      fade: 1
+    }, [
+      { src: 'styles/images/img_2.JPG',
+	    alt:  'Sand Castle',
+    	from: '100% 100% 0.5x',
+   		to:   '100% 20% 0.3x',
+    	time: 5
+	  },
+      { src: 'styles/images/img_1.JPG',
+	      alt:  'Rubber Ring',
+  		  from: '100% 40% 1x',
+  		  to:   '0% 0% 1x',
+   		 time:3.5
+	 },
+      { src: 'styles/images/img_3.JPG',
+	    alt:  'Flip Flops',
+		from: '100% 80% 1x',
+		to:   '80% 0% 1x',
+		time: 5
+	 }
+    ])
+  });
+</script>
+
+<div id="main" align=center>
+
+<div id="banner">
+<div id="fb" onClick="window.location='http://es-la.facebook.com/pages/Los-Rosantes-Centro-Educativo/130357480364771?sk=wall&filter=12'; " ></div>
+	<div id="barrerAniation" ></div>
+</div>
+<div id= "menu">
+    <table id="txtMenu">
+        <tr>
+        <td>
+  	      <div id="menuLeft"></div>
+        </td>
+        <td>
+        <div id="menuright">
+        <table id="txtTabla">
+            <tr>
+                <td>
+                    <div id="inicio"><a href="index.html">  Inicio  </a></div></td>
+                <td>
+                    <div id="historia"><a href="secciones.html#niveles">  Niveles  </a></div>
+                </td>
+                <td>
+                    <div id="niveles"><a href="secciones.html#actividades">Actividades  </a> </div>
+                </td>
+                <td>
+                    <div id="actividades"><a href="secciones.html#proxe">  Idiomas </a></div>
+                </td>
+                <td>
+                    <div id="contactos"><a href="secciones.html#contacto">  Contactos </a> </div>
+                </td>
+                <td>
+                    <div id="aulavirtual"><a href="http://losrosantes.edu.do/Cursos/moodle/index.php">  Aula Virtual </a> </div>
+                </td>
+            </tr>      
+       	</table>   
+        </td>
+        </tr>  
+    </table>
+<!--</div><!--menurigth-->
+</div><!--menu-->
+<div id= "Contenido">
+    <div id="galeriaBienvenida">
+    	<img height="240px" width="100%" src="styles/images/S.JPG"   />
+    </div><!--galeriaBienvenida-->
+    <div id="textoBienvenida">
+        <p class="style3">Bienvenidos</p>
+        <p class="style4">Les damos la bienvenida al espacio tecnológico que les brinda la oportunidad de conectar directamente con El Centro Educativo Los Rosantes -CELROS-. A través de este medio puede enterarse de las actividades recientes del centro, los niveles impartidos,  y otras acciones que podrían ser de su interés. </p>
+        <p class="estilo6"> <a rel="#mainOverlay" href="bienvenida.html" >ver mas </a></p>
+
+    </div><!--textoBienvenida-->
+    <div id="divSecciones">
+         <table id="tablaSecciones" border="0px">
+            <tr>
+                <td class="secciones">
+                    <div id="s1">
+                        <span><img  class="estiloImageSecciones" src="styles/images/iconoGaleria.png" /></span><br />
+                        <span class="style5">Galeria </span><br />
+                       <p class="estilo7">Explora   nuestra amplia galería de fotos y videos de las actividades realizadas.</p>
+                        <center><a rel="#mainOverlay" href="prox.html" name="galeria" class="button">ver</a></center>
+                    </div>
+                </td>
+                <td class="secciones">
+                    <div id="s2">                     
+                    	<img class="estiloImageSecciones" src="styles/images/logoHistoria.png" /><br />
+                        <span class="style5">Historia </span><br />
+                  <p class="estilo7">Conoce la  historia de nuestro 27 años de  experiencia formando a niños y jovenes.</p>
+                        <center><a rel="#mainOverlay" href="historia.html" name="historia" class="button">ver</a></center>
+                    </div>
+                </td>
+                <td class="secciones" align="center">
+                    <div id="s3">
+                        <img class="estiloImageSecciones" src="styles/images/icinoNoticias.png" /><br />
+                        <span class="style5">Noticias</span><br />
+<p class="estilo7">Se el primero en enterarte de las  ultimas  noticias, actividades, novedades de Los Rosantes.
+</p>
+                        <center><a rel="#mainOverlay" name="noticias" href="noticias.html" class="button">ver</a></center>
+                    </div>
+                </td>
+            </tr>
+       	</table>
+        
+    </div><!--secciones-->
+
+
+</div><!--contenido-->
+<div id="footer">
+    <center>
+       Av. España No. 10, Los Molinos,
+       Villa Duarte, Santo Domingo Este, Rep. Dominicana <br />
+       Tel.:809-595-9110
+       E-Mail: Colegio_Los_Rosantes@hotmail.com <br />
+       -Madcy Rijo -<br/>
+       2010-2011
+    </center>
+</div><!--footer-->
+
+
+</body>
+<div id="amarre"></div>
+</html>
