@@ -1,7 +1,7 @@
-var parentURL="http://losrosantes.edu.do";
+// var parentURL="http://losrosantes.edu.do";
 var parentURLWS="http://52.10.56.216:8080"; 
  // var parentURL="http://localhost:8383";
-// var parentURLWS="http://localhost:8080"; 
+var parentURLWS="http://localhost:8080"; 
 var selection;
 var dblSelection;
 var idSelected;

@@ -79,7 +79,7 @@
 }
 
 #noticias {
-    width:650px;
+    width:90%;
     margin:0 0 0 5px;
     float:left;
 }
@@ -116,4 +116,9 @@
     font-size:14px;
     color:#2A2A2A;
     text-align:left;
+}
+
+ img.embedObject{
+    max-width: 147%;
+    /* height: 50%; */
 }
