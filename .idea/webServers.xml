@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cc367a27-63ef-4644-895f-e28b54e79ac2" name="losrosantes.edu.do" url="http://losrosantes.edu.do">
+        <fileTransfer rootFolder="/opt/vultr/losrosantes" accessType="SFTP" host="losrosantes.edu.do" port="22" sshConfigId="d12127d4-654d-45e9-ae5a-5b296393492d" sshConfig="losrosantes.edu.do">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

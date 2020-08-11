@@ -22,6 +22,10 @@
     top: 10% !important;
 
 }
+.navbar-nav {
+    margin-top: 85px !important;
+
+}
 
 .close{
     position: absolute;
