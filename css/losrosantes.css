@@ -26,6 +26,9 @@
     margin-top: 85px !important;
 
 }
+#bodyContainer{
+    background-color:  #191919 !important;
+}
 
 .close{
     position: absolute;
