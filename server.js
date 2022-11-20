@@ -5,4 +5,4 @@ console.log(__dirname)
 
 connect()
     .use(serveStatic(__dirname))
-    .listen(8080, () => console.log('Server running on 8080...'));
+    .listen(80, () => console.log('Server running on 80...'));
