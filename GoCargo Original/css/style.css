@@ -173,7 +173,7 @@ SUBHEADER
 	}
 
 	#subheader.page-about {
-		background: url(../img/colegio/panel1_edited.jpg) top;
+		background: url('../img/colegio/i/cole (1).jpg') top;
 	}
 
 	#subheader.page-news {
@@ -3125,6 +3125,7 @@ top: 0;
 }
 
 .side-bg .background-image {
+/*background: url(../img/colegio/preescolar.jpg);*/
 background: url(../img/bg/bg-2.jpg);
 background-position: 50% 50%!important;
 background-size: cover!important;
@@ -3164,11 +3165,13 @@ background: url('../img/bg/bg_1.jpg') #303a43; background-size:cover;
 }
 
 #service-details.side-bg .background-image {
-background: url('../img/bg/bg_service_details_1.jpg');
+background: url('../img/colegio/i/primaria.jpg');
+/*background: url('../img/bg/bg_service_details_1.jpg');*/
 }
 
 #service-details-2.side-bg .background-image {
-background: url('../img/bg/bg_service_details_2.jpg');
+background: url('../img/colegio/i/prescolar.jpg');
+/*background: url('../img/bg/bg_service_details_2.jpg');*/
 }
 
 #service-details-3.side-bg .background-image {
