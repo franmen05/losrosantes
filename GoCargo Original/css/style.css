@@ -2705,6 +2705,7 @@ display: table-cell;
 .box-one-third {
 width: 33.3%;
 float: left;
+height: 390px;
 }
 
 .box-one-third .inner {
@@ -3079,7 +3080,8 @@ background: url(../img/bg_full_3.jpg) center fixed;
 }
 
 #bg-service-1 {
-background: url(../img/bg/bg_service_1.jpg) top center #565f68;
+/*background: url(../img/bg/bg_service_1.jpg) top center #565f68;*/
+background: url(../img/colegio/i/prescolar2.jpg) top center #565f68;
 background-size: cover;
 }
 
@@ -3088,12 +3090,13 @@ background-size: cover;
 }
 
 #bg-service-2 {
-background: url(../img/bg/bg_service_2.jpg) top center #236b94;
+background: url(../img/colegio/i/secundaria2.jpg) top center #236b94;
 background-size: cover;
 }
 
 #bg-service-3 {
-background: url(../img/bg/bg_service_3.jpg) top center #bf3f3f;
+background: url(../img/colegio/i/primaria2.jpg) top center #bf3f3f;
+/*background: url(../img/bg/bg_service_3.jpg) top center #bf3f3f;*/
 background-size: cover;
 }
 

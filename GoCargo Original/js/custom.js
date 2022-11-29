@@ -351,7 +351,7 @@ jQuery(document).ready(function () {
         //  Accordion Panels
     jQuery(".accordion div").show();
     setTimeout("$('.accordion div').slideToggle('slow');", 1000);
-        jQuery(".accordion h3").on( "click", function() {
+    jQuery(".accordion h3").on( "click", function() {
 		jQuery(this).next(".pane").slideToggle("slow").siblings(".pane:visible").slideUp("slow");
 		jQuery(this).toggleClass("current");
 		jQuery(this).siblings("h3").removeClass("current");
@@ -367,7 +367,7 @@ jQuery(document).ready(function () {
     // On clicking of the links do something.
     link.on('click', function (e) {
 
-        e.preventDefault();
+        // e.preventDefault();
 
         var a = $(this).next(".content");
 
@@ -376,7 +376,8 @@ jQuery(document).ready(function () {
         //$(a).slideToggle('fast');
         $(".accordion div").not(a).slideUp('fast');
 
-    });
+    });    // Get all the links.
+
 
     // magnific popup init
 
