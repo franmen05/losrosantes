@@ -115,13 +115,13 @@ HEADER
 
 
 	header .social a {
-	color: #D03232;
+	color: #4c997c;
 	font-size: 18px;
 	padding: 0 8px 0 8px;
 	}
 
 	header .social a:hover {
-	color: #D03232;
+	color: #b93067;
 	}
 
 	header .animated {
@@ -274,11 +274,11 @@ MAINMENU
 
 
 	#mainmenu a:hover {
-	color: #fff;
+	color: #8f1919;
 	}
 
 	#mainmenu li:hover a {
-	color: #D03232;
+	color: #4c997c;
 	}
 
 	#mainmenu li:hover li a {
@@ -307,7 +307,7 @@ MAINMENU
 
 	#mainmenu li li a:hover {
 	color: #fff;
-	background: #D03232;
+	background: #4c997c;
 	}
 
 	#mainmenu li ul {
@@ -915,7 +915,7 @@ ELEMENTS
 
 	.light-text .accordion li {
 	border-color: rgba(255,255,255,.3);
-	border-left: solid 2px #D03232;
+	border-left: solid 2px #4c997c;
 	background: none;
 	}
 	
@@ -1285,18 +1285,16 @@ ELEMENTS
 /* call to action
 ------------------------------ */
 	.call-to-action {
-	background: url(../img/bg_full_2.jpg) center fixed;
+		background: url(../img/bg_full_2.jpg) center fixed;
+		background: #b93067;
+		padding: 30px 0 30px 0;
 	}
 
 	.call-to-action h2 {
 	margin: 0;
 	padding: 0;
 	}	
-	
-	.call-to-action {
-	background: #D03232;
-	padding: 30px 0 30px 0;
-	}
+
 
 	.call-to-action h2 {
 	color: #fff;
@@ -1687,14 +1685,14 @@ ELEMENTS
 	clear: both;
 	width: 80px;
 	height: 3px;
-	background: #D03232;
+	background: #4c997c;
 	margin: 20px auto 20px auto;
 	}
 	.tiny-border {
 	clear: both;
 	width: 40px;
 	height: 3px;
-	background: #D03232;
+	background: #4c997c;
 	margin: 20px 0 20px 0;
 	}
 	.tiny-border.center{
@@ -3830,13 +3828,13 @@ width: 38px;
 height: 38px;
 margin-right: 10px;
 margin-bottom: 10px!important;
-background: #D03232;
-border: solid 2px #D03232;
+background: #4c997c;
+border: solid 2px #4c997c;
 }
 
 .social-icons i:hover {
 color: #D03232;
-border: solid 2px #D03232;
+border: solid 2px #b93067;
 background: none;
 }
 
