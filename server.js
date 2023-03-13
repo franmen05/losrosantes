@@ -3,6 +3,7 @@ var serveStatic = require('serve-static');
 
 console.log(__dirname)
 
+const number = 80;
 connect()
     .use(serveStatic(__dirname))
-    .listen(80, () => console.log('Server running on 80...'));
+    .listen(number, () => console.log(`Server running on ${number} ...`));

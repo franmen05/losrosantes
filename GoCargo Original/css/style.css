@@ -163,7 +163,7 @@ SUBHEADER
 
 	#subheader {
 	padding-top: 80px;
-	background: url(../img/bg/bg-subheader.jpg) top;
+		background: url('../img/colegio/i/cole (1).jpg') top;
 	background-size: cover !important;
 	text-align: center;
 	}
@@ -177,15 +177,18 @@ SUBHEADER
 	}
 
 	#subheader.page-news {
-	background: url(../img/bg/bg-subheader-3.jpg) top;
+	/*background: url(../img/bg/bg-subheader-3.jpg) top;*/
+		background: url('../img/colegio/i/cole (1).jpg') top;
 	}
 
 	#subheader.page-contact {
-	background: url(../img/bg/bg-subheader-4.jpg) top;
+	/*background: url(../img/bg/bg-subheader-4.jpg) top;*/
+		background: url('../img/colegio/i/cole (1).jpg') top;
 	}
 	
 	#subheader.page-track {
-	background: url(../img/bg/bg-subheader-5.jpg) top;
+	/*background: url(../img/bg/bg-subheader-5.jpg) top;*/
+		background: url('../img/colegio/i/cole (1).jpg') top;
 	}
 
 	#subheader h1 {
