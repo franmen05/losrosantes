@@ -30,7 +30,7 @@ No se tocan: `css/` viejo, `js/` viejo, `rs-plugin/`, `fonts/`, `old/`, `old2/`,
   República Dominicana.
 - Teléfono y WhatsApp: 809-595-9110 (`tel:+18095959110`,
   `https://wa.me/18095959110`). El 9119 que aparece en el FAQ viejo es un error.
-- Correo: info@losrosantes.edu.do
+- Correo: colegio_los_rosantes@hotmail.com
 - Horario: lunes a viernes, 7:30 a. m. – 4:00 p. m. (horario corrido).
 - Coordenadas: 18.477816464578112, -69.87758486618942
 - Facebook: https://www.facebook.com/proyecto.celros
@@ -228,7 +228,7 @@ JSON-LD. La portada define la entidad completa; las demás la referencian con
   "foundingDate": "1983-10-17",
   "founder": {"@type": "Person", "name": "Perseveranda Carmen Herrera Contreras"},
   "telephone": "+1-809-595-9110",
-  "email": "info@losrosantes.edu.do",
+  "email": "colegio_los_rosantes@hotmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Av. España No. 10, Los Molinos, Villa Duarte",
