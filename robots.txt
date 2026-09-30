@@ -1,0 +1,36 @@
+# robots.txt de https://www.losrosantes.edu.do
+# Se permite el acceso a todo el sitio, incluidos los rastreadores de IA.
+# Un grupo con user-agent especifico no hereda las reglas de "*", por eso
+# los Disallow se repiten en cada grupo.
+
+User-agent: *
+Allow: /
+Disallow: /old/
+Disallow: /old2/
+Disallow: /pepin/
+Disallow: /SysMedicalClient/
+Disallow: /node_modules/
+Disallow: /rs-plugin/
+
+# Rastreadores de IA y buscadores
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bingbot
+Allow: /
+Disallow: /old/
+Disallow: /old2/
+Disallow: /pepin/
+Disallow: /SysMedicalClient/
+Disallow: /node_modules/
+Disallow: /rs-plugin/
+
+Sitemap: https://www.losrosantes.edu.do/sitemap.xml

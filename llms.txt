@@ -1,0 +1,53 @@
+# Centro Educativo Los Rosantes (CELROS)
+
+> Colegio privado en Villa Duarte, Santo Domingo Este, República Dominicana, con más de 40 años de experiencia. Fundado el 17 de octubre de 1983 por la Lic. Perseveranda Carmen Herrera Contreras. Ofrece educación inicial, primaria y secundaria con formación integral basada en valores éticos. Lema: "Aprendizaje con disciplina y alegría".
+
+Este archivo resume la información esencial del colegio para asistentes de IA. Sitio oficial: https://www.losrosantes.edu.do/
+
+## Datos de contacto
+
+- Nombre: Centro Educativo Los Rosantes (siglas: CELROS; también conocido como Colegio Los Rosantes).
+- Dirección: Av. España No. 10, Los Molinos, Villa Duarte, Santo Domingo Este, República Dominicana.
+- Teléfono: 809-595-9110 (+1 809 595 9110).
+- WhatsApp: 809-595-9110 (https://wa.me/18095959110).
+- Correo: info@losrosantes.edu.do
+- Horario: lunes a viernes, de 7:30 a. m. a 4:00 p. m. (horario corrido).
+- Coordenadas: 18.477816, -69.877585.
+- Facebook: https://www.facebook.com/proyecto.celros
+- Instagram: https://www.instagram.com/centro_educativo_los_rosantes
+
+## Niveles educativos
+
+- Inicial: primeros pasos en la educación. Se trabajan las capacidades motoras, el desarrollo del lenguaje, la socialización, el pensamiento matemático y la lectoescritura. Sus objetivos incluyen preparar al niño para su ingreso a la primaria, contribuir a su desarrollo físico, motriz, psíquico, cognitivo, afectivo, social, ético, estético y espiritual, favorecer su integración con la familia, desarrollar la creatividad y los primeros valores y actitudes (responsabilidad, cooperación, iniciativa, higiene, buena alimentación y conservación del medio ambiente).
+- Primaria: afianza los conocimientos básicos del nivel inicial (contar, leer, escribir, sumar y restar) y avanza hasta multiplicar, dividir y trabajar con conjuntos y fracciones, con un conocimiento más amplio del lenguaje, las ciencias naturales y las ciencias sociales mediante experimentos científicos, historia y geografía. Promueve las actividades físicas y artísticas. Sus objetivos incluyen la formación ética y cívica, el interés por la lectura, la reflexión y la crítica, las bases del inglés y del francés, el aprendizaje de las ciencias y el interés por la investigación, la informática y las expresiones artísticas.
+- Secundaria: último paso del ciclo escolar. Los estudiantes desarrollan el método científico a mayor nivel, conocen cómo funcionan las empresas, y fortalecen la opinión literaria, las matemáticas, la química, la física, y la historia y geografía nacional y mundial, como base para la universidad y la vida laboral. Sus objetivos incluyen fomentar la lectura, afianzar el inglés y el francés, orientar el uso adecuado de las nuevas tecnologías y ofrecer una formación integral que prepare para ingresar al nivel superior e interactuar con responsabilidad en la sociedad.
+
+## Inscripción
+
+Requisitos:
+
+- Acta de nacimiento.
+- Récord de notas.
+- 3 fotografías 2x2.
+- Certificado médico.
+- Tarjeta de vacunas (para preescolar).
+- Carta de referencia de la institución anterior (si aplica).
+
+Para más información sobre inscripción, llamar o escribir por WhatsApp al 809-595-9110, o enviar un correo a info@losrosantes.edu.do. Este resumen no incluye precios ni cupos disponibles: deben consultarse directamente con el colegio.
+
+## Historia
+
+- 1983: el 17 de octubre nace en la comunidad de Los Molinos, Villa Duarte, el "Colegio Infantil Los Rosantes", con el propósito de trabajar en la formación de los niños de la comunidad en el área de preescolar. Su fundadora es la Lic. Perseveranda Carmen Herrera Contreras. Desde el inicio el colegio está en la Av. España No. 10.
+- 1989: comienza la construcción de una segunda planta para ampliar la oferta educativa y contar con más espacio.
+- 1995: inglés, francés e informática pasan a formar parte del currículo. Ese mismo año el colegio cambia su nombre a "Centro Educativo Los Rosantes", por ordenanza del Ministerio de Educación.
+- 1998: se empieza a usar una tercera planta, lo que permitió una tanda matutina para la actividad escolar normal y una tanda vespertina para actividades extracurriculares.
+- Hoy: el colegio continúa a través del proyecto CELROS, con el objetivo de formar jóvenes que colaboren con el crecimiento social, moral y económico del país.
+
+## Páginas del sitio
+
+- [Inicio](https://www.losrosantes.edu.do/): presentación del colegio, niveles, razones para elegirlo, requisitos de inscripción, preguntas frecuentes y ubicación.
+- [Educación Inicial](https://www.losrosantes.edu.do/service-inicial.html): descripción y objetivos del nivel inicial y preescolar.
+- [Educación Primaria](https://www.losrosantes.edu.do/service-primaria.html): descripción y objetivos del nivel primario.
+- [Educación Secundaria](https://www.losrosantes.edu.do/service-secundaria.html): descripción y objetivos del nivel secundario.
+- [Nuestra historia](https://www.losrosantes.edu.do/about.html): historia del colegio desde 1983, fundadora y evolución de la institución.
+- [Contacto](https://www.losrosantes.edu.do/contact.html): teléfono, WhatsApp, correo, dirección, horario y mapa.
