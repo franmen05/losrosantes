@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera las imagenes optimizadas de img/site/ a partir de img/colegio/.
+"""Genera las imagenes optimizadas de img/site/ a partir de img/colegio/ y _notes/redes/.
 
 Uso (desde la raiz del repo):  python3 _notes/build_images.py
 Requiere Pillow con soporte WebP y AVIF. No modifica los originales.
@@ -27,6 +27,29 @@ TABLE = [
     ("graduacion-inicial", "preescolar.jpg", 1280),
     ("ninos-actividad", "foto(1).JPG", 1280),
     ("estudiantes-amigas", "foto_3.JPG", 1280),
+]
+
+# Fotos de redes (prototipo): origen en _notes/redes/, mismas reglas.
+REDES = os.path.join(ROOT, "_notes", "redes")
+TABLE_REDES = [
+    ("intercambio-visita", "ig-DIc0NOwOQxb-02.jpg", 1280),
+    ("entrada-bienvenidos", "fb150.jpg", 1280),
+    ("acto-uniforme", "fb016.jpg", 1280),
+    ("inicial-acuarelas", "fb076.jpg", 780),
+    ("inicial-manualidad", "fb077.jpg", 780),
+    ("inicial-libro", "fb074.jpg", 1040),
+    ("inicial-graduacion-mural", "fb106.jpg", 1280),
+    ("primaria-proyecto", "fb085.jpg", 1280),
+    ("primaria-feria", "fb075.jpg", 780),
+    ("primaria-panamericanismo", "fb110.jpg", 1280),
+    ("primaria-culturas", "fb113.jpg", 1280),
+    ("secundaria-exposicion", "fb018.jpg", 1200),
+    ("secundaria-exposicion-2", "fb019.jpg", 1200),
+    ("secundaria-patria", "fb002.jpg", 1280),
+    ("patio-lema", "fb005.jpg", 960),
+    ("baile-folclorico", "fb011.jpg", 1280),
+    ("estudiantes-muro", "fb069.jpg", 1280),
+    ("aniversario", "fb053.jpg", 1280),
 ]
 
 # Poner False para desactivar la mejora en una foto concreta.
@@ -68,8 +91,10 @@ def save_all(im, base):
 
 
 def build_photos():
-    for name, rel, lg in TABLE:
-        im = load(os.path.join(SRC, rel))
+    rows = [(n, os.path.join(SRC, r), lg) for n, r, lg in TABLE]
+    rows += [(n, os.path.join(REDES, r), lg) for n, r, lg in TABLE_REDES]
+    for name, path, lg in rows:
+        im = load(path)
         if ENHANCE.get(name, True):
             im = enhance(im)
         for suffix, w in (("640", 640), ("lg", lg)):
@@ -81,17 +106,19 @@ def build_photos():
 
 
 def build_og():
-    im = load(os.path.join(SRC, "i", "contactos.jpg"))
+    """og.jpg 1200x630 desde fb150.jpg: recorte a ancho completo (1600x840) que
+    conserva el rotulo BIENVENIDOS y todas las cabezas; luego se reduce a 1200x630."""
+    im = load(os.path.join(REDES, "fb150.jpg"))
     im = enhance(im)
     W, H = 1200, 630
-    left = (im.width - W) // 2
-    # Recorte centrado en horizontal; en vertical se centra (ver OG_TOP para ajustar).
-    top = OG_TOP if OG_TOP is not None else (im.height - H) // 2
-    im = im.crop((left, top, left + W, top + H))
+    ch = round(im.width * H / W)  # alto del recorte con la proporcion del OG
+    top = OG_TOP
+    im = im.crop((0, top, im.width, top + ch)).resize((W, H), Image.LANCZOS)
+    im = sharpen(im)
     im.save(os.path.join(OUT, "og.jpg"), quality=85, optimize=True, progressive=True)
 
 
-OG_TOP = 25  # subir el recorte para no cortar el rotulo "Centro Educativo"
+OG_TOP = 110  # px del original (1600x1200): justo sobre el rotulo BIENVENIDOS
 
 
 def logo_canvas(logo, size, margin_ratio):

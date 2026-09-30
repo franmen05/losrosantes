@@ -268,3 +268,52 @@ JSON-LD. La portada define la entidad completa; las demás la referencian con
 - Contacto: `ContactPage` + `BreadcrumbList`, `mainEntity` → `#school`.
 
 Todo JSON-LD debe ser JSON válido y coincidir con el texto visible.
+
+## Prototipo de imágenes de redes (rama `prototipo-imagenes`)
+
+Fotos tomadas del Facebook del colegio, guardadas en `_notes/redes/`. Salida en
+`img/site/` con las mismas reglas que el resto (AVIF, WebP y JPG; `-640` y `-lg`;
+sin ampliar; mejora suave).
+
+| nombre | origen (en `_notes/redes/`) | lg (ancho×alto) | qué muestra |
+|---|---|---|---|
+| entrada-bienvenidos | `fb150.jpg` | 1280×960 | estudiantes con uniforme en la entrada, rótulo «Bienvenidos» |
+| acto-uniforme | `fb016.jpg` | 1280×960 | estudiantes con uniforme en un acto escolar |
+| inicial-acuarelas | `fb076.jpg` | 780×1040 | niña pintando con acuarelas |
+| inicial-manualidad | `fb077.jpg` | 780×1040 | niña pegando papel en un dibujo |
+| inicial-libro | `fb074.jpg` | 1040×780 | niños trabajando en un cuaderno de actividades |
+| inicial-graduacion-mural | `fb106.jpg` | 1280×923 | graduación de inicial frente al mural |
+| primaria-proyecto | `fb085.jpg` | 1280×960 | grupo con camiseta del colegio y su proyecto |
+| primaria-feria | `fb075.jpg` | 780×1040 | grupo junto a una mesa con alimentos |
+| primaria-panamericanismo | `fb110.jpg` | 1280×960 | carteles del Día del Panamericanismo |
+| primaria-culturas | `fb113.jpg` | 1280×960 | presentación con trajes típicos |
+| secundaria-exposicion | `fb018.jpg` | 1200×1600 | estudiantes de secundaria exponiendo un cartel |
+| secundaria-exposicion-2 | `fb019.jpg` | 1200×1600 | estudiantes de secundaria exponiendo |
+| secundaria-patria | `fb002.jpg` | 1280×960 | estudiantes y docentes con traje típico, Mes de la Patria |
+| patio-lema | `fb005.jpg` | 960×1280 | edificio con el lema pintado y acto en el patio |
+| baile-folclorico | `fb011.jpg` | 1280×960 | niñas con traje típico tricolor |
+| estudiantes-muro | `fb069.jpg` | 1280×720 | estudiantes con uniforme frente a un muro pintado |
+| aniversario | `fb053.jpg` | 1280×960 | niños con camiseta del colegio en el aniversario |
+
+`img/site/og.jpg` se regenera (1200×630) a partir de `fb150.jpg`.
+
+Colocación:
+
+- `index.html`: hero `grupo-mural` → `entrada-bienvenidos`; tarjetas
+  `inicial-bandera` → `inicial-acuarelas`, `primaria-tablets` →
+  `primaria-proyecto`, `secundaria-graduacion` → `secundaria-exposicion`;
+  inscripción `estudiantes-uniforme` → `acto-uniforme`; ubicación: `fachada` se
+  mantiene.
+- `service-inicial.html`: principal `inicial-acuarelas`; galería de tres:
+  `inicial-manualidad`, `inicial-libro`, `inicial-graduacion-mural`.
+- `service-primaria.html`: principal `primaria-proyecto`; galería de cuatro:
+  `primaria-feria`, `primaria-panamericanismo`, `primaria-culturas`,
+  `primaria-aula` (la del aula con tabletas se mantiene).
+- `service-secundaria.html`: principal `secundaria-exposicion`; foto junto a los
+  compromisos `secundaria-patria`; galería nueva de dos (antes de «Otros
+  niveles», con el mismo patrón de sección que las otras páginas de nivel y el
+  título «Actividades de Educación Secundaria»): `secundaria-graduacion` y
+  `secundaria-exposicion-2`.
+- `about.html`: lema `mural-lema` → `patio-lema`; galería «Vida escolar»:
+  `baile-folclorico`, `estudiantes-muro`, `aniversario`.
+- `contact.html`: sin cambios.
